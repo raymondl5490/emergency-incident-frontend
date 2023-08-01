@@ -5,6 +5,7 @@ This project is a web application designed to enrich emergency incident data and
 ## Installation & Running
 
 ```bash
+node -v # v18.16.1
 npm install
 npm run start
 ```
