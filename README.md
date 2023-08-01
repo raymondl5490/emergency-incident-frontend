@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# Emergency Incident
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a web application designed to enrich emergency incident data and provide better analytics for a fire department. It allows users to import existing incident data in JSON format and fetch weather data for the incident location at a certain time. The enriched data is displayed on a map for easy validation.
 
-## Available Scripts
+## Installation & Running
 
-In the project directory, you can run:
+```bash
+npm install
+npm run start
+```
 
-### `npm start`
+## Background
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Enrich 911 emergency incident data to provide better analytics for a fire department.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Task
+----
+Given an incident data, enrich it and then display the location and data on a map for easy validation. Try to utilize best practices where possible given available time. 
 
-### `npm test`
+Enrichments
+-----------
+* Weather at the time of the incident (use a weather service of your choice, but https://dev.meteostat.net/ does include free historical queries).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Notes
+-----
+* Example incidents are provided in the data folder.
+* We will test the project with an arbitrary incident file that is also from Richmond, VA and in the same format.
+* It would be sufficient for the app to only handle one CAD file at a time.
+* The incident location and attributes should be displayed on a map in the browser.
+* You can enrich the incident and get it on a map however you wish.
+* We would like for you to spend up to 4 hours. It is okay if you spend less time or more time so long as you return the project withing 24 hours of receiving it.
+* Use technology stack and approach of your choice.
 
-### `npm run build`
+## Hints
+* There are _many_ correct ways to complete this task
+* We do not expect a Production-quality deliverable for this exercise. For some tasks, it may be sufficient to add appropriate comments of the nature _"In a real, Production system, I would additionally do this..."_
+* We recognize that spending only four (4) hours means that you can only work on a limited implemention which is likely far from everything that you would like to do. Part of the exercise involves using your good judgment regarding what you actually _will_ implement. 
+* You are absolutely free to spend more than 4 hours if you like (there is no penalty for doing so), but the completed project must be checked-in with 24 hours
+* The most important criterion for evaluation is whether your project actually works. Whatever is delivered must be runnable. A project with a smaller amount of work that actually runs is far more valuable than a larger project that does not work or does not work correctly.
+* Do not become discouraged. Only candidates whom we believe will be successful are advanced to this stage of the recruiting process. You can do this!
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Deliverable
+-----------
+* Link to a Github repository with your commits as you originally made them. Do not squash them or just have a single commit. 
+* There should be a README in the repo with the following section:
+    * Steps to install and run your app. Assume the user will be on OSX but if you do not have access to OSX machine, provide needed steps to run your app on any other OS.
+    * What improvements would you make or best practices would you utilize if you had double the time?
+    * About how much time did you spend on the project?
+* If you completed the project, add a few screenshots to the repo that show the working version as running on your machine.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
